@@ -21,6 +21,12 @@ automoreAdapter.setAutomoreListener(new AutomoreListener() {
 mListView.setAdapter(automoreAdapter);
 ```
 
+In a case where there is no more data to load, you can disable the automore feature 
+by simply calling:
+```java
+automoreAdapter.setAutomoreEnabled(false);
+```
+
 ### Dependencies
 This project relies upon the 
 [CWAC AdapterWrapper](https://github.com/commonsguy/cwac-adapter) project
